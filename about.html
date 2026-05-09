@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>About | Great Optimist Nursery/Primary School — Ota, Ogun State</title>
+    <meta name="description"
+        content="Learn about Great Optimist School — our mission, vision, core values, leadership team, and why we are the best choice for nursery and primary education in Ota, Ogun State. Knowledge shared is power.">
+    <meta name="keywords"
+        content="Great Optimist School about, nursery school Ota, primary school Ogun State, mission vision values, school leadership, school gallery">
+    <meta name="author" content="Great Optimist School">
+    <link rel="canonical" href="https://greatoptimistschool.com.ng/about.html">
+    <meta property="og:title" content="About Us | Great Optimist School">
+    <meta property="og:description"
+        content="Raising confident, disciplined, and academically excellent future leaders. Discover our story, values, leadership team and campus life.">
+    <meta property="og:image" content="https://greatoptimistschool.com.ng/images/og-about.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --wine: #722F37;
+            --wine-dark: #5a232a;
+            --wine-soft: #8e4a53;
+            --cream: #FDF8F0;
+            --cream-dark: #f5ede1;
+            --white: #ffffff;
+            --off-white: #fffaf5;
+            --charcoal: #2c2c2c;
+            --gold-soft: #d4af7a;
+            --shadow-sm: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+            --shadow-md: 0 20px 30px -12px rgba(0, 0, 0, 0.08);
+            --radius: 1.25rem;
+            --radius-sm: 0.75rem;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--cream);
+            color: var(--charcoal);
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Topbar */
+        .topbar {
+            background: var(--wine-dark);
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.8rem;
+            padding: 0.6rem 0;
+        }
+
+        .topbar-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .topbar-left,
+        .topbar-right {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+        }
+
+        .topbar a {
+            color: rgba(255, 255, 255, 0.85);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .topbar a:hover,
+        .topbar i {
+            color: var(--gold-soft);
+        }
+
+        .topbar i {
+            margin-right: 0.3rem;
+            font-size: 0.75rem;
+        }
+
+        /* Header */
+        .header {
+            background: var(--white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem 1.5rem;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--wine), var(--wine-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold-soft);
+            font-size: 1.4rem;
+            box-shadow: 0 6px 12px rgba(114, 47, 55, 0.2);
+        }
+
+        .logo-text h1 {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--wine);
+            letter-spacing: -0.3px;
+        }
+
+        .logo-text span {
+            font-size: 0.65rem;
+            font-weight: 500;
+            color: var(--wine-soft);
+            letter-spacing: 0.5px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .nav-link {
+            padding: 0.6rem 1rem;
+            font-weight: 500;
+            color: var(--charcoal);
+            text-decoration: none;
+            border-radius: 2rem;
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            background: var(--wine);
+            color: var(--white);
+        }
+
+        .btn-portal {
+            background: var(--wine);
+            color: white !important;
+            padding: 0.5rem 1.2rem;
+            border-radius: 2rem;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 26px;
+            height: 2.5px;
+            background: var(--wine);
+            border-radius: 4px;
+        }
+
+        /* Page Hero */
+        .page-hero {
+            background: linear-gradient(115deg, var(--wine-dark) 0%, var(--wine) 100%);
+            padding: 3.5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 400px;
+            height: 100%;
+            background: radial-gradient(circle at 100% 50%, rgba(255, 245, 225, 0.1) 0%, transparent 80%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        .page-hero p {
+            color: rgba(255, 255, 245, 0.85);
+            font-size: 1rem;
+            max-width: 550px;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1.2rem;
+            font-size: 0.85rem;
+        }
+
+        .breadcrumb a {
+            color: var(--gold-soft);
+            text-decoration: none;
+        }
+
+        .breadcrumb span {
+            color: rgba(255, 255, 240, 0.5);
+        }
+
+        /* Sections */
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section-alt {
+            background: var(--white);
+        }
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--wine);
+            margin-bottom: 1rem;
+        }
+
+        .section-label::before {
+            content: '';
+            width: 30px;
+            height: 2px;
+            background: var(--gold-soft);
+        }
+
+        .section-title {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 800;
+            color: var(--wine-dark);
+            margin-bottom: 1rem;
+        }
+
+        .section-sub {
+            font-size: 1rem;
+            color: #5a5a5a;
+            max-width: 620px;
+            margin-bottom: 2.5rem;
+        }
+
+        /* MVV Cards */
+        .mvv-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .mvv-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(114, 47, 55, 0.08);
+            transition: var(--transition);
+        }
+
+        .mvv-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--gold-soft);
+        }
+
+        .mvv-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(114, 47, 55, 0.1);
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--wine);
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .mvv-card h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        /* Values cloud */
+        .values-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1.5rem;
+        }
+
+        .value-tag {
+            background: rgba(114, 47, 55, 0.08);
+            color: var(--wine-dark);
+            padding: 0.5rem 1.2rem;
+            border-radius: 2rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        .value-tag i {
+            margin-right: 0.4rem;
+            color: var(--gold-soft);
+        }
+
+        /* Stats bar */
+        .stats-bar {
+            background: var(--white);
+            padding: 2rem 0;
+            border-top: 1px solid rgba(114, 47, 55, 0.1);
+            border-bottom: 1px solid rgba(114, 47, 55, 0.1);
+        }
+
+        .stats-inner {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            text-align: center;
+        }
+
+        .stat h4 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--wine);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .stat p {
+            font-size: 0.8rem;
+            color: #5a5a5a;
+        }
+
+        /* Story & Timeline */
+        .story-timeline-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .story-text {
+            color: #4a4a4a;
+            line-height: 1.7;
+            margin: 1.2rem 0;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0.5rem;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--wine), var(--gold-soft));
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -1.8rem;
+            top: 0.2rem;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--wine);
+            border: 2px solid var(--cream);
+            box-shadow: 0 0 0 2px var(--gold-soft);
+        }
+
+        .timeline-year {
+            font-weight: 700;
+            color: var(--wine);
+            font-size: 0.8rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .timeline-title {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .timeline-desc {
+            font-size: 0.85rem;
+            color: #5a5a5a;
+        }
+
+        /* Leadership team */
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+
+        .leader-card {
+            background: var(--white);
+            border-radius: var(--radius-sm);
+            padding: 2rem 1.5rem;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #f0e6dc;
+            transition: var(--transition);
+        }
+
+        .leader-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .leader-icon {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(145deg, var(--wine), var(--wine-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.2rem;
+            font-size: 2.5rem;
+            color: var(--gold-soft);
+        }
+
+        .leader-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--wine-dark);
+        }
+
+        .leader-title {
+            font-size: 0.8rem;
+            color: var(--wine);
+            font-weight: 600;
+            margin: 0.3rem 0 0.6rem;
+        }
+
+        .leader-bio {
+            font-size: 0.85rem;
+            color: #5a5a5a;
+        }
+
+        /* Why Choose */
+        .reason-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .reason-item {
+            background: var(--cream-dark);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            text-align: center;
+        }
+
+        .reason-item i {
+            font-size: 2rem;
+            color: var(--wine);
+            margin-bottom: 1rem;
+        }
+
+        /* GALLERY SECTION - New */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 1rem;
+            overflow: hidden;
+            aspect-ratio: 4 / 3;
+            background: #f0e6dc;
+            cursor: pointer;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+            padding: 1rem;
+            color: white;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        /* Lightbox Modal */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 85%;
+            border-radius: 0.5rem;
+            object-fit: contain;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .lightbox-close:hover {
+            color: var(--gold-soft);
+        }
+
+        .gallery-note {
+            text-align: center;
+            margin-top: 1.2rem;
+            font-size: 0.8rem;
+            color: var(--wine-soft);
+        }
+
+        /* CTA */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--wine-dark) 0%, var(--wine) 100%);
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .cta-banner h2 {
+            font-size: clamp(1.6rem, 4vw, 2.2rem);
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .btn-cta {
+            background: var(--gold-soft);
+            color: var(--wine-dark);
+            padding: 0.8rem 2rem;
+            border-radius: 3rem;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            transition: 0.2s;
+        }
+
+        .btn-cta:hover {
+            background: #e6c89c;
+            transform: scale(1.02);
+        }
+
+        /* Footer */
+        .footer {
+            background: #2c2022;
+            color: #f0e2da;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-col h4 {
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 1rem;
+            color: var(--gold-soft);
+        }
+
+        .footer-col p,
+        .footer-col li {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 0.6rem;
+        }
+
+        .footer-col a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .footer-col a:hover {
+            color: var(--gold-soft);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            width: 34px;
+            height: 34px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.2s;
+        }
+
+        .social-links a:hover {
+            background: var(--gold-soft);
+            color: #2c2022;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1.5rem;
+            text-align: center;
+            font-size: 0.75rem;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(25px);
+            transition: all 0.6s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 860px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav {
+                position: fixed;
+                top: 85px;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 1.5rem;
+                gap: 0.8rem;
+                transform: translateY(-150%);
+                transition: 0.3s;
+                z-index: 999;
+                box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav.open {
+                transform: translateY(0);
+            }
+
+            .story-timeline-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .stats-inner {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            }
+        }
+
+        @media (max-width: 540px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .stats-inner {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="topbar">
+        <div class="container">
+            <div class="topbar-inner">
+                <div class="topbar-left">
+                    <span><i class="fas fa-map-marker-alt"></i> 7Famous Estate, Ikosi Road, Iyesi, Ota</span>
+                    <span><i class="fas fa-clock"></i> Mon – Fri: 7:30am – 4pm</span>
+                </div>
+                <div class="topbar-right">
+                    <a href="tel:09030658195"><i class="fas fa-phone-alt"></i> 09030658195</a>
+                    <a href="tel:07030282111"><i class="fas fa-phone-alt"></i> 07030282111</a>
+                    <a href="mailto:greatoptimistsch@gmail.com"><i class="fas fa-envelope"></i>
+                        greatoptimistsch@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-wrapper">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i class="fas fa-seedling"></i></div>
+                <div class="logo-text">
+                    <h1>Great Optimist School</h1>
+                    <span>Knowledge Shared is Power</span>
+                </div>
+            </a>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="admissions.html" class="nav-link">Admissions</a>
+                <a href="#" class="nav-link btn-portal"><i class="fas fa-user-graduate"></i> Portal</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+        <div class="container hero-content">
+            <h1>About Great Optimist School</h1>
+            <p>Raising confident, disciplined, and academically excellent future leaders since October 2023.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span class="current">About Us</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mission Vision Values Section -->
+    <section class="section">
+        <div class="container">
+            <span class="section-label">Our Foundation</span>
+            <h2 class="section-title">Mission, Vision & Core Values</h2>
+            <p class="section-sub">Shaping young minds with purpose, excellence, and integrity.</p>
+            <div class="mvv-grid reveal">
+                <div class="mvv-card">
+                    <div class="mvv-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Our Mission</h3>
+                    <p>To raise a morally and academically sound future leader — equipping every child with character,
+                        competence, and courage to excel in life.</p>
+                </div>
+                <div class="mvv-card">
+                    <div class="mvv-icon"><i class="fas fa-eye"></i></div>
+                    <h3>Our Vision</h3>
+                    <p>To raise confident, disciplined, and academically excellent learners who become responsible
+                        leaders and positive contributors to society through quality education and sound moral values.
+                    </p>
+                </div>
+                <div class="mvv-card">
+                    <div class="mvv-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Core Values</h3>
+                    <p>Excellence · Discipline · Integrity · Innovation · Respect · Leadership · Teamwork · Diligence ·
+                        Compassion · Optimism</p>
+                </div>
+            </div>
+            <div class="values-cloud">
+                <span class="value-tag"><i class="fas fa-star"></i> Excellence</span>
+                <span class="value-tag"><i class="fas fa-ruler"></i> Discipline</span>
+                <span class="value-tag"><i class="fas fa-scale-balanced"></i> Integrity</span>
+                <span class="value-tag"><i class="fas fa-lightbulb"></i> Innovation</span>
+                <span class="value-tag"><i class="fas fa-hand-sparkles"></i> Respect</span>
+                <span class="value-tag"><i class="fas fa-flag-checkered"></i> Leadership</span>
+                <span class="value-tag"><i class="fas fa-people-arrows"></i> Teamwork</span>
+                <span class="value-tag"><i class="fas fa-hard-hat"></i> Diligence</span>
+                <span class="value-tag"><i class="fas fa-hands-helping"></i> Compassion</span>
+                <span class="value-tag"><i class="fas fa-sun"></i> Optimism</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Row -->
+    <div class="stats-bar">
+        <div class="container">
+            <div class="stats-inner">
+                <div class="stat">
+                    <h4>Oct 2023</h4>
+                    <p>Year Founded</p>
+                </div>
+                <div class="stat">
+                    <h4>Nursery–Primary 6</h4>
+                    <p>School Levels</p>
+                </div>
+                <div class="stat">
+                    <h4>100%</h4>
+                    <p>Committed Staff</p>
+                </div>
+                <div class="stat">
+                    <h4>10+</h4>
+                    <p>Core Values</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Story + Timeline -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="story-timeline-grid">
+                <div class="reveal">
+                    <span class="section-label">Our Story</span>
+                    <h2 class="section-title">A New Era of Excellence</h2>
+                    <p class="story-text">Great Optimist Nursery/Primary School was established in October 2023 with a
+                        burning passion to redefine foundational education in Ota, Ogun State. Located at 7Famous
+                        Estate, Ikosi Road, Iyesi, we believe that <strong>“Knowledge Shared is Power.”</strong> Our
+                        approach blends academic rigour with strong moral values, creating an environment where every
+                        child discovers their unique potential.</p>
+                    <p class="story-text">Despite being a young school, we have quickly gained a reputation for
+                        individual attention, character formation, and academic progress. Our dedicated team works
+                        relentlessly to produce confident leaders who will shape tomorrow's Nigeria.</p>
+                    <a href="admissions.html" class="btn-cta"
+                        style="background: var(--wine); color: white; display: inline-block;">Join Our Journey <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="timeline reveal">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">March 2023</div>
+                        <div class="timeline-title">Vision Conceived</div>
+                        <div class="timeline-desc">The founders envisioned a school centered on moral excellence and
+                            academic brilliance.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">October 2023</div>
+                        <div class="timeline-title">Official Opening</div>
+                        <div class="timeline-desc">Great Optimist School opens its doors to nursery and primary learners
+                            in Ota.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-title">First Academic Milestones</div>
+                        <div class="timeline-desc">Students excel in internal assessments and showcase exceptional
+                            discipline.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2025</div>
+                        <div class="timeline-title">Expanding Impact</div>
+                        <div class="timeline-desc">Growing enrollment and launch of enriched extracurriculars.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="section">
+        <div class="container">
+            <span class="section-label">Our Leaders</span>
+            <h2 class="section-title">The Driving Force</h2>
+            <p class="section-sub">Passionate, visionary educators dedicated to your child's success.</p>
+            <div class="leadership-grid reveal">
+                <div class="leader-card">
+                    <div class="leader-icon"><i class="fas fa-chalkboard-user"></i></div>
+                    <div class="leader-name">Sotubo Oluwaseye Adeola</div>
+                    <div class="leader-title">Proprietress</div>
+                    <div class="leader-bio">Visionary leader with over a decade of experience in child development. She
+                        ensures every child receives a holistic, values-driven education.</div>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-icon"><i class="fas fa-user-tie"></i></div>
+                    <div class="leader-name">Sotubo Nureni</div>
+                    <div class="leader-title">Director</div>
+                    <div class="leader-bio">Strategic oversight, fostering a culture of innovation, ethics, and
+                        continuous improvement across the school.</div>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-icon"><i class="fas fa-person-chalkboard"></i></div>
+                    <div class="leader-name">Mrs. Tinuoye Abosede Esther</div>
+                    <div class="leader-title">Head Teacher</div>
+                    <div class="leader-bio">Manages daily academic affairs, mentoring teachers and inspiring young
+                        learners to achieve excellence.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION (ready for your images) -->
+    <section class="section section-alt">
+        <div class="container">
+            <span class="section-label">Campus Life</span>
+            <h2 class="section-title">Moments at Great Optimist</h2>
+            <p class="section-sub">A glimpse into our vibrant learning environment, activities, and happy faces.</p>
+            <div class="gallery-grid reveal" id="galleryGrid">
+                <!-- Gallery items will be populated dynamically or you can directly add images.
+             To add your own images, replace the src paths with your actual images.
+             Example: "images/gallery/classroom.jpg", "images/gallery/playground.jpg" etc. -->
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x450/f5ede1/722F37?text=Your+Image+Here" alt="School Activity"
+                        data-full="https://placehold.co/1200x900/f5ede1/722F37?text=Your+Image">
+                    <div class="gallery-overlay">Classroom Session</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x450/f0e6dc/722F37?text=Add+Photo+Here" alt="Outdoor Play"
+                        data-full="https://placehold.co/1200x900/f0e6dc/722F37?text=Add+Photo">
+                    <div class="gallery-overlay">Outdoor Activities</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x450/fff5ee/722F37?text=Replace+Me" alt="School Event"
+                        data-full="https://placehold.co/1200x900/fff5ee/722F37?text=Replace+Me">
+                    <div class="gallery-overlay">School Assembly</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x450/f5ede1/722F37?text=Your+Photo" alt="Learning"
+                        data-full="https://placehold.co/1200x900/f5ede1/722F37?text=Your+Photo">
+                    <div class="gallery-overlay">Interactive Learning</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x450/f0e6dc/722F37?text=Play+Area" alt="Playground"
+                        data-full="https://placehold.co/1200x900/f0e6dc/722F37?text=Playground">
+                    <div class="gallery-overlay">Play & Fun</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x450/fff5ee/722F37?text=Art+Class" alt="Art Class"
+                        data-full="https://placehold.co/1200x900/fff5ee/722F37?text=Art+Class">
+                    <div class="gallery-overlay">Creative Arts</div>
+                </div>
+            </div>
+            <div class="gallery-note">
+                <i class="fas fa-images"></i> Replace placeholder images with your own school photos — place them in
+                <strong>images/gallery/</strong> folder and update the <strong>src</strong> attributes above.
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Great Optimist -->
+    <section class="section">
+        <div class="container">
+            <span class="section-label">Why Choose Us</span>
+            <h2 class="section-title">What Sets Us Apart</h2>
+            <div class="reason-grid reveal">
+                <div class="reason-item"><i class="fas fa-heart"></i>
+                    <h4>Friendly & Safe Environment</h4>
+                    <p>Every child feels loved, secure, and motivated to learn.</p>
+                </div>
+                <div class="reason-item"><i class="fas fa-user-graduate"></i>
+                    <h4>Individual Attention</h4>
+                    <p>Small classes ensure personalized support for each learner.</p>
+                </div>
+                <div class="reason-item"><i class="fas fa-chalkboard"></i>
+                    <h4>Dedicated Teachers</h4>
+                    <p>Caring, trained educators who go the extra mile.</p>
+                </div>
+                <div class="reason-item"><i class="fas fa-star-of-life"></i>
+                    <h4>Moral & Leadership Focus</h4>
+                    <p>Building confident, disciplined future leaders.</p>
+                </div>
+                <div class="reason-item"><i class="fas fa-laptop-code"></i>
+                    <h4>21st Century Skills</h4>
+                    <p>Digital literacy, critical thinking, and creativity.</p>
+                </div>
+                <div class="reason-item"><i class="fas fa-handshake"></i>
+                    <h4>Parent-Teacher Partnership</h4>
+                    <p>Open communication and shared responsibility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <div class="cta-banner">
+        <div class="container">
+            <h2>Give Your Child the Great Optimist Advantage</h2>
+            <p style="color: rgba(255,245,235,0.9); margin-bottom: 1.5rem;">Enroll now for a transformative educational
+                journey.</p>
+            <a href="tel:09030658195" class="btn-cta"><i class="fas fa-phone-alt"></i> Call to Enroll</a>
+            <a href="admissions.html" style="background: white; color: var(--wine); margin-left: 1rem;"
+                class="btn-cta">Apply Online →</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Great Optimist School</h4>
+                    <p>Knowledge Shared is Power. Raising confident, disciplined, and academically excellent future
+                        leaders.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="#">Parent Portal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 7Famous Estate, Ikosi Road, Iyesi, Ota, Ogun State
+                        </li>
+                        <li><i class="fas fa-phone"></i> 09030658195 , 07030282111</li>
+                        <li><i class="fas fa-envelope"></i> greatoptimistsch@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Great Optimist Nursery/Primary School. All rights reserved. | Designed with purpose</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightboxImg" src="" alt="Enlarged view">
+    </div>
+
+    <script>
+        // Mobile toggle
+        const hamburger = document.getElementById('hamburgerBtn');
+        const navMenu = document.getElementById('navMenu');
+        hamburger.addEventListener('click', () => navMenu.classList.toggle('open'));
+        document.querySelectorAll('.nav-link').forEach(link => link.addEventListener('click', () => navMenu.classList.remove('open')));
+
+        // Scroll reveal
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
+        reveals.forEach(el => observer.observe(el));
+
+        // LIGHTBOX GALLERY functionality
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const closeBtn = document.querySelector('.lightbox-close');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const imgElement = item.querySelector('img');
+                let fullSrc = imgElement.getAttribute('data-full');
+                if (!fullSrc) fullSrc = imgElement.src;
+                lightboxImg.src = fullSrc;
+                lightbox.classList.add('active');
+            });
+        });
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            lightboxImg.src = '';
+        }
+        closeBtn.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+    </script>
+</body>
+
+</html>

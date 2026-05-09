@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Admissions | Great Optimist Nursery/Primary School — Ota, Ogun State</title>
+    <meta name="description"
+        content="Apply for admission to Great Optimist Nursery/Primary School. Open enrollment for Nursery and Primary levels. Simple application process, secure form, and quick response via WhatsApp.">
+    <meta name="keywords"
+        content="school admission Ota, Great Optimist admission, nursery school admission Ogun State, primary school registration, apply online">
+    <meta name="author" content="Great Optimist School">
+    <link rel="canonical" href="https://greatoptimistschool.com.ng/admissions.html">
+    <meta property="og:title" content="Admissions | Great Optimist School">
+    <meta property="og:description"
+        content="Apply online for admission to Great Optimist Nursery/Primary School. Knowledge shared is power — enroll your child today!">
+    <meta property="og:image" content="https://greatoptimistschool.com.ng/images/og-admission.jpg">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --wine: #722F37;
+            --wine-dark: #5a232a;
+            --wine-soft: #8e4a53;
+            --cream: #FDF8F0;
+            --cream-dark: #f5ede1;
+            --white: #ffffff;
+            --off-white: #fffaf5;
+            --charcoal: #2c2c2c;
+            --gold-soft: #d4af7a;
+            --shadow-sm: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+            --shadow-md: 0 20px 30px -12px rgba(0, 0, 0, 0.08);
+            --radius: 1.25rem;
+            --radius-sm: 0.75rem;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--cream);
+            color: var(--charcoal);
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Topbar */
+        .topbar {
+            background: var(--wine-dark);
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.8rem;
+            padding: 0.6rem 0;
+        }
+
+        .topbar-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .topbar-left,
+        .topbar-right {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+        }
+
+        .topbar a {
+            color: rgba(255, 255, 255, 0.85);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .topbar a:hover,
+        .topbar i {
+            color: var(--gold-soft);
+        }
+
+        .topbar i {
+            margin-right: 0.3rem;
+            font-size: 0.75rem;
+        }
+
+        /* Header */
+        .header {
+            background: var(--white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem 1.5rem;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--wine), var(--wine-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold-soft);
+            font-size: 1.4rem;
+            box-shadow: 0 6px 12px rgba(114, 47, 55, 0.2);
+        }
+
+        .logo-text h1 {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--wine);
+            letter-spacing: -0.3px;
+        }
+
+        .logo-text span {
+            font-size: 0.65rem;
+            font-weight: 500;
+            color: var(--wine-soft);
+            letter-spacing: 0.5px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .nav-link {
+            padding: 0.6rem 1rem;
+            font-weight: 500;
+            color: var(--charcoal);
+            text-decoration: none;
+            border-radius: 2rem;
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            background: var(--wine);
+            color: var(--white);
+        }
+
+        .btn-portal {
+            background: var(--wine);
+            color: white !important;
+            padding: 0.5rem 1.2rem;
+            border-radius: 2rem;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 26px;
+            height: 2.5px;
+            background: var(--wine);
+            border-radius: 4px;
+        }
+
+        /* Page Hero */
+        .page-hero {
+            background: linear-gradient(115deg, var(--wine-dark) 0%, var(--wine) 100%);
+            padding: 3rem 0;
+            position: relative;
+        }
+
+        .page-hero h1 {
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: 800;
+            color: white;
+        }
+
+        .page-hero p {
+            color: rgba(255, 245, 235, 0.85);
+            max-width: 550px;
+            margin-top: 0.5rem;
+        }
+
+        .breadcrumb {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+        }
+
+        .breadcrumb a {
+            color: var(--gold-soft);
+            text-decoration: none;
+        }
+
+        /* Sections */
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section-alt {
+            background: var(--white);
+        }
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--wine);
+            margin-bottom: 1rem;
+        }
+
+        .section-label::before {
+            content: '';
+            width: 30px;
+            height: 2px;
+            background: var(--gold-soft);
+        }
+
+        .section-title {
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            font-weight: 800;
+            color: var(--wine-dark);
+            margin-bottom: 0.8rem;
+        }
+
+        .section-sub {
+            color: #5a5a5a;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        /* Steps Grid */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.8rem;
+            margin-top: 1rem;
+        }
+
+        .step-card {
+            background: var(--white);
+            border-radius: var(--radius-sm);
+            padding: 1.8rem;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #f0e2d4;
+            transition: var(--transition);
+        }
+
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .step-number {
+            width: 48px;
+            height: 48px;
+            background: var(--wine);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin: 0 auto 1rem;
+        }
+
+        /* Requirements grid */
+        .req-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .req-card {
+            background: var(--cream);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            border-left: 4px solid var(--wine);
+        }
+
+        .req-card i {
+            font-size: 1.8rem;
+            color: var(--wine);
+            margin-bottom: 0.75rem;
+        }
+
+        /* Form */
+        .form-card {
+            background: var(--white);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+            border: 1px solid rgba(114, 47, 55, 0.1);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .form-group.full-width {
+            grid-column: span 2;
+        }
+
+        label {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--wine-dark);
+        }
+
+        .required {
+            color: var(--wine);
+            margin-left: 0.2rem;
+        }
+
+        input,
+        select,
+        textarea {
+            padding: 0.8rem 1rem;
+            border: 1px solid #e2d6cc;
+            border-radius: 0.75rem;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            transition: 0.2s;
+            background: var(--off-white);
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--wine);
+            box-shadow: 0 0 0 3px rgba(114, 47, 55, 0.1);
+        }
+
+        .btn-submit {
+            background: var(--wine);
+            color: white;
+            border: none;
+            padding: 0.9rem 2rem;
+            border-radius: 3rem;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .btn-submit:hover {
+            background: var(--wine-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(114, 47, 55, 0.3);
+        }
+
+        .alert {
+            padding: 1rem;
+            border-radius: 0.75rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .alert-success {
+            background: #e0f2e9;
+            color: #1e5c3b;
+            border-left: 4px solid #2b7a4b;
+        }
+
+        .alert-error {
+            background: #fce8e8;
+            color: #a12a2a;
+            border-left: 4px solid var(--wine);
+        }
+
+        .note-text {
+            font-size: 0.8rem;
+            text-align: center;
+            margin-top: 1.2rem;
+            color: #5a5a5a;
+        }
+
+        /* CTA Banner */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--wine-dark) 0%, var(--wine) 100%);
+            padding: 3rem 0;
+            text-align: center;
+            color: white;
+        }
+
+        .cta-banner h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2c2022;
+            color: #f0e2da;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-col h4 {
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 1rem;
+            color: var(--gold-soft);
+        }
+
+        .footer-col p,
+        .footer-col li {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 0.6rem;
+        }
+
+        .footer-col a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .footer-col a:hover {
+            color: var(--gold-soft);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            width: 34px;
+            height: 34px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.2s;
+        }
+
+        .social-links a:hover {
+            background: var(--gold-soft);
+            color: #2c2022;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1.5rem;
+            text-align: center;
+            font-size: 0.75rem;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: 0.6s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 860px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav {
+                position: fixed;
+                top: 85px;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 1.5rem;
+                gap: 0.8rem;
+                transform: translateY(-150%);
+                transition: 0.3s;
+                z-index: 999;
+                box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav.open {
+                transform: translateY(0);
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-group.full-width {
+                grid-column: span 1;
+            }
+
+            .form-card {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 540px) {
+            .container {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="container">
+            <div class="topbar-inner">
+                <div class="topbar-left">
+                    <span><i class="fas fa-map-marker-alt"></i> 7Famous Estate, Ikosi Road, Iyesi, Ota</span>
+                    <span><i class="fas fa-clock"></i> Mon – Fri: 7:30am – 4pm</span>
+                </div>
+                <div class="topbar-right">
+                    <a href="tel:09030658195"><i class="fas fa-phone-alt"></i> 09030658195</a>
+                    <a href="tel:07030282111"><i class="fas fa-phone-alt"></i> 07030282111</a>
+                    <a href="mailto:greatoptimistsch@gmail.com"><i class="fas fa-envelope"></i>
+                        greatoptimistsch@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-wrapper">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i class="fas fa-seedling"></i></div>
+                <div class="logo-text">
+                    <h1>Great Optimist School</h1>
+                    <span>Knowledge Shared is Power</span>
+                </div>
+            </a>
+            <button class="hamburger" id="hamburgerBtn"><span></span><span></span><span></span></button>
+            <nav class="nav" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="admissions.html" class="nav-link active">Admissions</a>
+                <a href="#" class="nav-link btn-portal"><i class="fas fa-user-graduate"></i> Portal</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <div class="page-hero">
+        <div class="container">
+            <h1>Admissions Open 2025/2026</h1>
+            <p>Begin your child's journey of excellence at Great Optimist School — from Nursery to Primary 6.</p>
+            <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Admissions</span></div>
+        </div>
+    </div>
+
+    <!-- Steps -->
+    <section class="section">
+        <div class="container">
+            <span class="section-label">How to Apply</span>
+            <h2 class="section-title">Simple 3-Step Admission Process</h2>
+            <div class="steps-grid reveal">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Fill Application</h3>
+                    <p>Complete the online form below with student & parent details.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Submit via WhatsApp</h3>
+                    <p>Your application will be sent directly to our admissions team via WhatsApp.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Visit & Enroll</h3>
+                    <p>We'll contact you for a school tour, assessment, and enrollment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements -->
+    <section class="section section-alt">
+        <div class="container">
+            <span class="section-label">Documents</span>
+            <h2 class="section-title">What You'll Need</h2>
+            <div class="req-grid reveal">
+                <div class="req-card"><i class="fas fa-file-alt"></i>
+                    <h4>Application Form</h4>
+                    <p>Completed online form</p>
+                </div>
+                <div class="req-card"><i class="fas fa-baby-carriage"></i>
+                    <h4>Birth Certificate</h4>
+                    <p>Birth certificate or age declaration</p>
+                </div>
+                <div class="req-card"><i class="fas fa-notes-medical"></i>
+                    <h4>Immunization Record</h4>
+                    <p>Current immunization card</p>
+                </div>
+                <div class="req-card"><i class="fas fa-school"></i>
+                    <h4>Previous Report</h4>
+                    <p>Last term's report (if applicable)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section class="section">
+        <div class="container">
+            <span class="section-label">Apply Now</span>
+            <h2 class="section-title">Online Application Form</h2>
+            <p class="section-sub">Fill the form below. Upon submission, your details will be sent via WhatsApp to our
+                admissions team. You will receive a response within 24 hours.</p>
+
+            <div id="alertBox"></div>
+
+            <div class="form-card">
+                <form id="admissionForm">
+                    <div class="form-grid">
+                        <div class="form-group full-width">
+                            <label>Applying for Level <span class="required">*</span></label>
+                            <select id="applyingLevel" required>
+                                <option value="">Select class</option>
+                                <option value="Nursery 1">Nursery 1 (Age 3-4)</option>
+                                <option value="Nursery 2">Nursery 2 (Age 4-5)</option>
+                                <option value="Primary 1">Primary 1</option>
+                                <option value="Primary 2">Primary 2</option>
+                                <option value="Primary 3">Primary 3</option>
+                                <option value="Primary 4">Primary 4</option>
+                                <option value="Primary 5">Primary 5</option>
+                                <option value="Primary 6">Primary 6</option>
+                            </select>
+                        </div>
+                        <div class="form-group"><label>Student First Name <span class="required">*</span></label><input
+                                type="text" id="firstName" required placeholder="e.g., Adaeze"></div>
+                        <div class="form-group"><label>Student Last Name <span class="required">*</span></label><input
+                                type="text" id="lastName" required placeholder="e.g., Okafor"></div>
+                        <div class="form-group"><label>Date of Birth <span class="required">*</span></label><input
+                                type="date" id="dob" required></div>
+                        <div class="form-group"><label>Gender <span class="required">*</span></label><select id="gender"
+                                required>
+                                <option value="">Select</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select></div>
+                        <div class="form-group full-width"><label>Parent/Guardian Full Name <span
+                                    class="required">*</span></label><input type="text" id="parentName" required
+                                placeholder="Full name"></div>
+                        <div class="form-group"><label>Phone Number <span class="required">*</span></label><input
+                                type="tel" id="phone" required placeholder="e.g., 08012345678"></div>
+                        <div class="form-group"><label>Alternate Phone (Optional)</label><input type="tel" id="altPhone"
+                                placeholder="e.g., 09012345678"></div>
+                        <div class="form-group"><label>Email Address <span class="required">*</span></label><input
+                                type="email" id="email" required placeholder="parent@example.com"></div>
+                        <div class="form-group full-width"><label>Home Address <span
+                                    class="required">*</span></label><textarea id="address" rows="2" required
+                                placeholder="Full residential address"></textarea></div>
+                        <div class="form-group full-width"><label>Additional Notes / Questions</label><textarea
+                                id="notes" rows="2"
+                                placeholder="Any special needs or questions for the school"></textarea></div>
+                    </div>
+                    <div style="display: flex; justify-content: center; margin-top: 2rem;">
+                        <button type="submit" class="btn-submit" id="submitBtn"><i class="fab fa-whatsapp"></i> Submit
+                            via WhatsApp</button>
+                    </div>
+                </form>
+                <div class="note-text"><i class="fas fa-lock"></i> Your data is secure. After submission, you'll be
+                    redirected to WhatsApp to send your application. Our team will respond within 24 hours.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <div class="cta-banner">
+        <div class="container">
+            <h3>Need help with the form?</h3>
+            <p style="margin-bottom: 1rem;">Reach us directly on WhatsApp for assistance.</p>
+            <a href="https://wa.me/2349030658195?text=Hello%2C%20I%20need%20help%20with%20the%20admission%20form"
+                target="_blank" class="btn-submit" style="background: #25D366; color:white; text-decoration: none;"><i
+                    class="fab fa-whatsapp"></i> Chat with Admissions</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Great Optimist School</h4>
+                    <p>Knowledge Shared is Power. Raising confident, disciplined, and academically excellent future
+                        leaders.</p>
+                    <div class="social-links"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i
+                                class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-whatsapp"></i></a></div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="#">Parent Portal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 7Famous Estate, Ikosi Road, Iyesi, Ota</li>
+                        <li><i class="fas fa-phone"></i> 09030658195 , 07030282111</li>
+                        <li><i class="fas fa-envelope"></i> greatoptimistsch@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Great Optimist Nursery/Primary School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile nav
+        const hamburger = document.getElementById('hamburgerBtn');
+        const navMenu = document.getElementById('navMenu');
+        hamburger.addEventListener('click', () => navMenu.classList.toggle('open'));
+        document.querySelectorAll('.nav-link').forEach(link => link.addEventListener('click', () => navMenu.classList.remove('open')));
+
+        // Scroll reveal
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
+        reveals.forEach(el => observer.observe(el));
+
+        // WhatsApp phone numbers (the two contacts)
+        const WHATSAPP_NUMBERS = ['2349030658195', '2347030282111']; // Nigeria format without '+'
+
+        // Form submission handler
+        const form = document.getElementById('admissionForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const alertBox = document.getElementById('alertBox');
+
+        function showAlert(message, type) {
+            alertBox.innerHTML = `<div class="alert alert-${type}">${message}</div>`;
+            setTimeout(() => { alertBox.innerHTML = ''; }, 8000);
+        }
+
+        function formatWhatsAppMessage(formData) {
+            let msg = "📋 *NEW ADMISSION APPLICATION* 📋%0A";
+            msg += `%0A🏫 *School:* Great Optimist Nursery/Primary School`;
+            msg += `%0A📅 *Date:* ${new Date().toLocaleString()}%0A`;
+            msg += `%0A🎓 *Applying Level:* ${formData.applyingLevel}`;
+            msg += `%0A👶 *Student Name:* ${formData.firstName} ${formData.lastName}`;
+            msg += `%0A📆 *Date of Birth:* ${formData.dob}`;
+            msg += `%0A⚥ *Gender:* ${formData.gender}`;
+            msg += `%0A%0A👨‍👩‍👧 *Parent/Guardian:* ${formData.parentName}`;
+            msg += `%0A📞 *Phone:* ${formData.phone}`;
+            if (formData.altPhone) msg += `%0A📞 *Alt Phone:* ${formData.altPhone}`;
+            msg += `%0A✉️ *Email:* ${formData.email}`;
+            msg += `%0A🏠 *Address:* ${formData.address.substring(0, 100)}`;
+            if (formData.notes) msg += `%0A%0A📝 *Notes:* ${formData.notes.substring(0, 150)}`;
+            msg += `%0A%0A✅ *Action Required:* Please contact the parent to schedule assessment and enrollment.`;
+            return msg;
+        }
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Collect data
+            const applyingLevel = document.getElementById('applyingLevel').value;
+            const firstName = document.getElementById('firstName').value.trim();
+            const lastName = document.getElementById('lastName').value.trim();
+            const dob = document.getElementById('dob').value;
+            const gender = document.getElementById('gender').value;
+            const parentName = document.getElementById('parentName').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const altPhone = document.getElementById('altPhone').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const address = document.getElementById('address').value.trim();
+            const notes = document.getElementById('notes').value.trim();
+
+            // Validation
+            if (!applyingLevel || !firstName || !lastName || !dob || !gender || !parentName || !phone || !email || !address) {
+                showAlert('Please fill in all required fields.', 'error');
+                return;
+            }
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                showAlert('Please enter a valid email address.', 'error');
+                return;
+            }
+            const phoneRegex = /^0[789][01]\d{8}$/;
+            if (!phoneRegex.test(phone)) {
+                showAlert('Please enter a valid Nigerian phone number (e.g., 08012345678).', 'error');
+                return;
+            }
+
+            const formData = {
+                applyingLevel, firstName, lastName, dob, gender, parentName, phone, altPhone, email, address, notes
+            };
+
+            // Disable button to prevent double submission
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-pulse"></i> Preparing...';
+
+            try {
+                // Format the WhatsApp message
+                const message = formatWhatsAppMessage(formData);
+
+                // We will send to both numbers: first to number 1, then optionally notify second?
+                // For user experience, we open two WhatsApp chats? Better to send to both numbers simultaneously? 
+                // Actual implementation: open a single WhatsApp chat with primary contact + CC the other via link? 
+                // But requirement: "goes to the WhatsApp DM of the two contacts" — we can open a multi-target? WhatsApp doesn't support group creation via link with message. 
+                // Alternative: Send to PRIMARY (first number) and BCC to second by opening two tabs? That may be disruptive.
+                // The cleanest: open a chat with first number, and copy message also to second by generating two links? 
+                // But design: We can send the message to both numbers by opening two WhatsApp links OR send to a group containing both numbers.
+                // Since they are two individual contacts, the user-friendly approach: show both numbers and provide separate buttons? Better: open WhatsApp for the first number, and after submit show an option to also notify second number. 
+                // To meet "goes to the WhatsApp DM of the two contacts" — I'll open a single WhatsApp chat with the first number (primary), and also generate a second link for the second number with a prefilled note that a copy of this admission has been sent. 
+                // But for seamless one-click: we can open the first number, and then ask user to also send to second. 
+                // Actually, to satisfy exactly: we will open a WhatsApp chat with the FIRST number, and then automatically open a second tab with the second number's WhatsApp (pre-filled with same message). Most devices handle this.
+                // Or we can send to both numbers by preparing two links and opening them with a slight delay. 
+
+                const encodedMsg = encodeURIComponent(message.replace(/%0A/g, '\n'));
+                const waLink1 = `https://wa.me/${WHATSAPP_NUMBERS[0]}?text=${encodedMsg}`;
+                const waLink2 = `https://wa.me/${WHATSAPP_NUMBERS[1]}?text=${encodedMsg}`;
+
+                // Open first WhatsApp (primary contact)
+                window.open(waLink1, '_blank');
+                // After short delay, open second WhatsApp (second contact) to ensure both DMs receive the message
+                setTimeout(() => {
+                    window.open(waLink2, '_blank');
+                }, 800);
+
+                showAlert('✅ Application prepared! WhatsApp will open for both contacts. Please send the message to complete your application. Our team will respond within 24 hours.', 'success');
+                form.reset();
+            } catch (err) {
+                console.error(err);
+                showAlert('Unable to submit application. Please contact us directly via phone.', 'error');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fab fa-whatsapp"></i> Submit via WhatsApp';
+            }
+        });
+    </script>
+</body>
+
+</html>
