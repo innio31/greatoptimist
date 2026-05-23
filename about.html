@@ -5,6 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>About | Great Optimist Nursery/Primary School — Ota, Ogun State</title>
+    <!-- Basic favicon (works in most browsers) -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Modern PNG favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+    <!-- Apple iOS devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <!-- Android Chrome -->
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Optional: For dark mode support -->
+    <meta name="theme-color" content="#ffffff">
     <meta name="description"
         content="Learn about Great Optimist School — our mission, vision, core values, leadership team, and why we are the best choice for nursery and primary education in Ota, Ogun State. Knowledge shared is power.">
     <meta name="keywords"
@@ -22,11 +37,6 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Favicon - Add inside <head> -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <style>
         * {
             margin: 0;
@@ -799,6 +809,77 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* Make the logo container align items properly */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        /* Resize the logo image */
+        .logo-img {
+            height: 45px;
+            /* Adjust this value (40-60px typically works) */
+            width: auto;
+            /* Maintains aspect ratio */
+            max-width: 60px;
+            /* Prevents it from getting too wide */
+            object-fit: contain;
+            /* Ensures the whole logo fits without cropping */
+        }
+
+        /* Optional: If your logo is too tall, use max-height */
+        .logo-img {
+            max-height: 50px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Adjust text size to match smaller logo if needed */
+        .logo-text h1 {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .logo-text span {
+            font-size: 0.7rem;
+        }
+
+        /* For mobile responsiveness */
+        @media (max-width: 768px) {
+            .logo-img {
+                height: 35px;
+            }
+
+            .logo-text h1 {
+                font-size: 0.9rem;
+            }
+
+            .logo-text span {
+                font-size: 0.6rem;
+            }
+        }
+
+        .designer-link {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .designer-link:hover {
+            color: #2E7D32;
+            text-decoration: underline;
+        }
+
+        /* Optional: Add a small icon */
+        .designer-link::before {
+            content: "⚡";
+            margin-right: 4px;
+            font-size: 0.8em;
+        }
     </style>
 </head>
 
@@ -825,10 +906,10 @@
     <!-- Header -->
     <header class="header">
         <div class="nav-wrapper">
-            <a href="index.html" class="logo">
-                <div class="logo-icon"><i class="fas fa-seedling"></i></div>
+            <a href="#" class="logo">
+                <img src="images/logo.jpeg" alt="Great Optimist School Logo" class="logo-img">
                 <div class="logo-text">
-                    <h1>Great Optimist School</h1>
+                    <h1>Great Optimist School, Ota</h1>
                     <span>Knowledge Shared is Power</span>
                 </div>
             </a>
@@ -850,7 +931,7 @@
     <div class="page-hero">
         <div class="container hero-content">
             <h1>About Great Optimist School</h1>
-            <p>Raising confident, disciplined, and academically excellent future leaders since October 2023.</p>
+            <p>Raising confident, disciplined, and academically excellent future leaders since September 2023.</p>
             <div class="breadcrumb">
                 <a href="index.html">Home</a>
                 <span>/</span>
@@ -906,7 +987,7 @@
         <div class="container">
             <div class="stats-inner">
                 <div class="stat">
-                    <h4>Oct 2023</h4>
+                    <h4>Sept 2023</h4>
                     <p>Year Founded</p>
                 </div>
                 <div class="stat">
@@ -932,7 +1013,7 @@
                 <div class="reveal">
                     <span class="section-label">Our Story</span>
                     <h2 class="section-title">A New Era of Excellence</h2>
-                    <p class="story-text">Great Optimist Nursery/Primary School was established in October 2023 with a
+                    <p class="story-text">Great Optimist Nursery/Primary School was established in September 2023 with a
                         burning passion to redefine foundational education in Ota, Ogun State. Located at 7Famous
                         Estate, Ikosi Road, Iyesi, we believe that <strong>“Knowledge Shared is Power.”</strong> Our
                         approach blends academic rigour with strong moral values, creating an environment where every
@@ -954,7 +1035,7 @@
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-year">October 2023</div>
+                        <div class="timeline-year">September 2023</div>
                         <div class="timeline-title">Official Opening</div>
                         <div class="timeline-desc">Great Optimist School opens its doors to nursery and primary learners
                             in Ota.</div>
@@ -991,17 +1072,11 @@
                     <div class="leader-bio">Visionary leader with over a decade of experience in child development. She
                         ensures every child receives a holistic, values-driven education.</div>
                 </div>
-                <div class="leader-card">
-                    <div class="leader-icon"><i class="fas fa-user-tie"></i></div>
-                    <div class="leader-name">Sotubo Nureni</div>
-                    <div class="leader-title">Director</div>
-                    <div class="leader-bio">Strategic oversight, fostering a culture of innovation, ethics, and
-                        continuous improvement across the school.</div>
-                </div>
+
                 <div class="leader-card">
                     <div class="leader-icon"><i class="fas fa-person-chalkboard"></i></div>
                     <div class="leader-name">Mrs. Tinuoye Abosede Esther</div>
-                    <div class="leader-title">Head Teacher</div>
+                    <div class="leader-title">Supervisor</div>
                     <div class="leader-bio">Manages daily academic affairs, mentoring teachers and inspiring young
                         learners to achieve excellence.</div>
                 </div>
@@ -1020,40 +1095,67 @@
              To add your own images, replace the src paths with your actual images.
              Example: "images/gallery/classroom.jpg", "images/gallery/playground.jpg" etc. -->
                 <div class="gallery-item">
-                    <img src="https://placehold.co/600x450/f5ede1/722F37?text=Your+Image+Here" alt="School Activity"
-                        data-full="https://placehold.co/1200x900/f5ede1/722F37?text=Your+Image">
+                    <img src="images/gallery/event1.jpeg" alt="School Activity" data-full="images/gallery/event1.jpeg">
                     <div class="gallery-overlay">Classroom Session</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://placehold.co/600x450/f0e6dc/722F37?text=Add+Photo+Here" alt="Outdoor Play"
-                        data-full="https://placehold.co/1200x900/f0e6dc/722F37?text=Add+Photo">
+                    <img src="images/gallery/event2.jpeg" alt="Outdoor Play" data-full="images/gallery/event2.jpeg">
                     <div class="gallery-overlay">Outdoor Activities</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://placehold.co/600x450/fff5ee/722F37?text=Replace+Me" alt="School Event"
-                        data-full="https://placehold.co/1200x900/fff5ee/722F37?text=Replace+Me">
+                    <img src="images/gallery/event3.jpeg" alt="School Event" data-full="images/gallery/event3.jpeg">
                     <div class="gallery-overlay">School Assembly</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://placehold.co/600x450/f5ede1/722F37?text=Your+Photo" alt="Learning"
-                        data-full="https://placehold.co/1200x900/f5ede1/722F37?text=Your+Photo">
+                    <img src="images/gallery/event4.jpeg" alt="Learning" data-full="images/gallery/event4.jpeg">
                     <div class="gallery-overlay">Interactive Learning</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://placehold.co/600x450/f0e6dc/722F37?text=Play+Area" alt="Playground"
-                        data-full="https://placehold.co/1200x900/f0e6dc/722F37?text=Playground">
+                    <img src="images/gallery/event5.jpeg" alt="Playground" data-full="images/gallery/event5.jpeg">
                     <div class="gallery-overlay">Play & Fun</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://placehold.co/600x450/fff5ee/722F37?text=Art+Class" alt="Art Class"
-                        data-full="https://placehold.co/1200x900/fff5ee/722F37?text=Art+Class">
+                    <img src="images/gallery/event6.jpeg" alt="Art Class" data-full="images/gallery/event6.jpeg">
                     <div class="gallery-overlay">Creative Arts</div>
                 </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/event7.jpeg" alt="Art Class" data-full="images/gallery/event7.jpeg">
+                    <div class="gallery-overlay">Creative Arts</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/cultural1.jpeg" alt="Art Class" data-full="images/gallery/cultural1.jpeg">
+                    <div class="gallery-overlay">Cultural Day Feb 2026</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/cultural2.jpeg" alt="Art Class" data-full="images/gallery/cultural2.jpeg">
+                    <div class="gallery-overlay">Cultural Day Feb 2026</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/cultural3.jpeg" alt="Art Class" data-full="images/gallery/cultural3.jpeg">
+                    <div class="gallery-overlay">Cultural Day Feb 2026</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/cultural4.jpeg" alt="Art Class" data-full="images/gallery/cultural4.jpeg">
+                    <div class="gallery-overlay">Cultural Day Feb 2026</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/cultural5.jpeg" alt="Art Class" data-full="images/gallery/cultural5.jpeg">
+                    <div class="gallery-overlay">Cultural Day Feb 2026</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/cultural6.jpeg" alt="Art Class" data-full="images/gallery/cultural6.jpeg">
+                    <div class="gallery-overlay">Cultural Day Feb 2026</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/cultural7.jpeg" alt="Art Class" data-full="images/gallery/cultural7.jpeg">
+                    <div class="gallery-overlay">Cultural Day Feb 2026</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/cultural8.jpeg" alt="Art Class" data-full="images/gallery/cultural8.jpeg">
+                    <div class="gallery-overlay">Cultural Day Feb 2026</div>
+                </div>
             </div>
-            <div class="gallery-note">
-                <i class="fas fa-images"></i> Replace placeholder images with your own school photos — place them in
-                <strong>images/gallery/</strong> folder and update the <strong>src</strong> attributes above.
-            </div>
+
         </div>
     </section>
 
@@ -1108,7 +1210,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>Great Optimist School</h4>
+                    <h4>Great Optimist School, Ota</h4>
                     <p>Knowledge Shared is Power. Raising confident, disciplined, and academically excellent future
                         leaders.</p>
                     <div class="social-links">
@@ -1137,7 +1239,18 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2025 Great Optimist Nursery/Primary School. All rights reserved. | Designed with purpose</p>
+                <footer>
+                    <div class="footer-content">
+                        <p>© <span id="currentYear"></span> Great Optimist Nursery/Primary School. All rights reserved.
+                        </p>
+                        <p>Designed with purpose by <a href="https://acad.com.ng" target="_blank"
+                                class="designer-link">Impact Digital Solutions</a></p>
+                    </div>
+                </footer>
+
+                <script>
+                    document.getElementById('currentYear').innerText = new Date().getFullYear();
+                </script>
             </div>
         </div>
     </footer>

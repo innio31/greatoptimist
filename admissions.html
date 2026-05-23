@@ -5,6 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Admissions | Great Optimist Nursery/Primary School — Ota, Ogun State</title>
+    <!-- Basic favicon (works in most browsers) -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Modern PNG favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+    <!-- Apple iOS devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <!-- Android Chrome -->
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Optional: For dark mode support -->
+    <meta name="theme-color" content="#ffffff">
     <meta name="description"
         content="Apply for admission to Great Optimist Nursery/Primary School. Open enrollment for Nursery and Primary levels. Simple application process, secure form, and quick response via WhatsApp.">
     <meta name="keywords"
@@ -21,11 +36,6 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Favicon - Add inside <head> -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <style>
         * {
             margin: 0;
@@ -579,6 +589,77 @@
                 padding: 0 1rem;
             }
         }
+
+        /* Make the logo container align items properly */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        /* Resize the logo image */
+        .logo-img {
+            height: 45px;
+            /* Adjust this value (40-60px typically works) */
+            width: auto;
+            /* Maintains aspect ratio */
+            max-width: 60px;
+            /* Prevents it from getting too wide */
+            object-fit: contain;
+            /* Ensures the whole logo fits without cropping */
+        }
+
+        /* Optional: If your logo is too tall, use max-height */
+        .logo-img {
+            max-height: 50px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Adjust text size to match smaller logo if needed */
+        .logo-text h1 {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .logo-text span {
+            font-size: 0.7rem;
+        }
+
+        /* For mobile responsiveness */
+        @media (max-width: 768px) {
+            .logo-img {
+                height: 35px;
+            }
+
+            .logo-text h1 {
+                font-size: 0.9rem;
+            }
+
+            .logo-text span {
+                font-size: 0.6rem;
+            }
+        }
+
+        .designer-link {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .designer-link:hover {
+            color: #2E7D32;
+            text-decoration: underline;
+        }
+
+        /* Optional: Add a small icon */
+        .designer-link::before {
+            content: "⚡";
+            margin-right: 4px;
+            font-size: 0.8em;
+        }
     </style>
 </head>
 
@@ -605,14 +686,16 @@
     <!-- Header -->
     <header class="header">
         <div class="nav-wrapper">
-            <a href="index.html" class="logo">
-                <div class="logo-icon"><i class="fas fa-seedling"></i></div>
+            <a href="#" class="logo">
+                <img src="images/logo.jpeg" alt="Great Optimist School Logo" class="logo-img">
                 <div class="logo-text">
-                    <h1>Great Optimist School</h1>
+                    <h1>Great Optimist School, Ota</h1>
                     <span>Knowledge Shared is Power</span>
                 </div>
             </a>
-            <button class="hamburger" id="hamburgerBtn"><span></span><span></span><span></span></button>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
             <nav class="nav" id="navMenu">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About</a>
@@ -627,7 +710,7 @@
     <!-- Hero -->
     <div class="page-hero">
         <div class="container">
-            <h1>Admissions Open 2025/2026</h1>
+            <h1>Admissions Open 2026/2027</h1>
             <p>Begin your child's journey of excellence at Great Optimist School — from Nursery to Primary 6.</p>
             <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Admissions</span></div>
         </div>
@@ -766,7 +849,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>Great Optimist School</h4>
+                    <h4>Great Optimist School, Ota</h4>
                     <p>Knowledge Shared is Power. Raising confident, disciplined, and academically excellent future
                         leaders.</p>
                     <div class="social-links"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i
@@ -791,7 +874,18 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2025 Great Optimist Nursery/Primary School. All rights reserved.</p>
+                <footer>
+                    <div class="footer-content">
+                        <p>© <span id="currentYear"></span> Great Optimist Nursery/Primary School. All rights reserved.
+                        </p>
+                        <p>Designed with purpose by <a href="https://acad.com.ng" target="_blank"
+                                class="designer-link">Impact Digital Solutions</a></p>
+                    </div>
+                </footer>
+
+                <script>
+                    document.getElementById('currentYear').innerText = new Date().getFullYear();
+                </script>
             </div>
         </div>
     </footer>
