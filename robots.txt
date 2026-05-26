@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://greatoptimist.acad.com.ng/sitemap.xml
